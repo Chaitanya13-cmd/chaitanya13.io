@@ -5,7 +5,6 @@ if (document.readyState === "loading") {
 }
 
 function init() {
-  // 👇 existing code yahin rahega
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     result.innerText = "";
     input.value = "";
 
-    count = Math.floor(Math.random() * 11) + 5; // 5–15 dots
+    count = Math.floor(Math.random() * 11) + 5; 
 
     for (let i = 0; i < count; i++) {
       const dot = document.createElement("div");
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       area.appendChild(dot);
     }
 
-    // hide after 1 sec
+  
     setTimeout(() => {
       area.innerHTML = "";
     }, 1000);
