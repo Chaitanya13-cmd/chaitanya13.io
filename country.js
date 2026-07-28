@@ -5,7 +5,6 @@ if (document.readyState === "loading") {
 }
 
 function init() {
-  // 👇 existing code yahin rahega
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   nextBtn.addEventListener("click", loadCountry);
 
-  // start first
+
   loadCountry();
 
 });
