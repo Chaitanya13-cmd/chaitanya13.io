@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "Physics Wallah", logo: "logos/physicswallah.png" }
   ];
 
-  let pool = []; // non-repeat pool
+  let pool = []; 
 
   const logoImg = document.getElementById("studyLogo");
   const buttons = document.querySelectorAll(".studyBtn");
@@ -26,13 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function loadQuestion() {
     result.innerText = "";
 
-    // reset when empty (no repeat till all used)
     if (pool.length === 0) resetPool();
 
-    const correct = pool.pop(); // unique question
+    const correct = pool.pop(); 
     logoImg.src = correct.logo;
 
-    // options: correct + random others
     const options = shuffle([
       correct.name,
       ...shuffle(allData.filter(d => d.name !== correct.name))
