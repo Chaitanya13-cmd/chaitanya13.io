@@ -5,7 +5,6 @@ if (document.readyState === "loading") {
 }
 
 function init() {
-  // 👇 existing code yahin rahega
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkBtn = document.getElementById("checkMemory");
   const result = document.getElementById("memoryResult");
 
-  // SAFETY CHECK
   if (!startBtn || !checkBtn) {
     console.error("Memory game elements missing");
     return;
@@ -31,9 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
  function generateSequence() {
   sequence = [];
 
-  // 👇 ek-ek karke emoji increase
   let emojiCount = level + 2; 
-  // Level 1 = 3 emojis, Level 2 = 4, etc.
 
   for (let i = 0; i < emojiCount; i++) {
     sequence.push(
