@@ -5,7 +5,6 @@ if (document.readyState === "loading") {
 }
 
 function init() {
-  // 👇 existing code yahin rahega
 }
 
 document.addEventListener("DOMContentLoaded", () => {
