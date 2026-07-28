@@ -5,7 +5,6 @@ if (document.readyState === "loading") {
 }
 
 function init() {
-  // 👇 existing code yahin rahega
 }
 
 const cars = [
@@ -16,7 +15,7 @@ const cars = [
   "Lamborghini","Ferrari"
 ];
 
-let unusedCars = [...cars];   // 👈 repeat control
+let unusedCars = [...cars];   
 let correctCar = "";
 let answered = false;
 
@@ -29,12 +28,11 @@ function loadCarGame() {
   carResult.textContent = "";
   answered = false;
 
-  // 🔁 reset ONLY after all cars used
+ 
   if (unusedCars.length === 0) {
     unusedCars = [...cars];
   }
 
-  // 🎯 pick & REMOVE car
   const index = Math.floor(Math.random() * unusedCars.length);
   correctCar = unusedCars.splice(index, 1)[0];
 
@@ -59,7 +57,7 @@ function loadCarGame() {
 }
 
 function checkCar(selected) {
-  if (answered) return; // ❌ double click protection
+  if (answered) return; 
   answered = true;
 
   carButtons.forEach(btn => btn.disabled = true);
@@ -75,7 +73,6 @@ function checkCar(selected) {
 
 nextCar.onclick = loadCarGame;
 
-// 🚀 first question
 loadCarGame();
 
 
