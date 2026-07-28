@@ -5,7 +5,6 @@ if (document.readyState === "loading") {
 }
 
 function init() {
-  // 👇 existing code yahin rahega
 }
 
 const facts = [
@@ -35,7 +34,6 @@ function loadRandomFact() {
   result.innerText = "";
 }
 
-// button clicks
 trueBtn.addEventListener("click", () => checkAnswer(true));
 falseBtn.addEventListener("click", () => checkAnswer(false));
 
@@ -49,7 +47,6 @@ function checkAnswer(choice) {
   }
 }
 
-// next = just load again (no end)
 nextBtn.addEventListener("click", loadRandomFact);
 
 // start game
