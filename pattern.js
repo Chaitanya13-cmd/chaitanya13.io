@@ -5,7 +5,6 @@ if (document.readyState === "loading") {
 }
 
 function init() {
-  // 👇 existing code yahin rahega
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const startBtn = document.getElementById("startPattern");
   const checkBtn = document.getElementById("checkPattern");
 
-  // SAFETY CHECK
   if (!startBtn || !checkBtn) {
     console.error("Pattern game elements missing");
     return;
