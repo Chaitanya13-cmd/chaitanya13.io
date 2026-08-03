@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chaitanya Gaming Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <img src="assets/images/loadingcharacter.png"
+             class="loader-character"
+             alt="Loading Character">
+
+        <h1>CHAITANYA GAMING ZONE</h1>
+
+        <p class="loading-text" id="loadingText">
+Initializing...
+</p>
+
+        <div class="loading-bar">
+
+            <div class="loading-fill"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="particles"></div>
+<!-- ================= HERO ================= -->
+
+<header class="hero">
+
+<div class="hero-overlay"></div>
+
+<nav class="top-nav">
+
+<div class="logo">
+🎮 <span>Chaitanya Gaming Zone</span>
+</div>
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#featured">Featured</a>
+<a href="#games">Games</a>
+<a href="#about">About</a>
+</div>
+
+</nav>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<h1>
+LEVEL UP<br>
+YOUR BRAIN
+</h1>
+
+<p>
+Play fun games, improve your memory,
+test your knowledge and enjoy gaming
+every day.
+</p>
+
+<div class="hero-buttons">
+
+<button class="play-main">
+▶ Play Now
+</button>
+
+<button class="learn-btn">
+⭐ Explore
+</button>
+
+</div>
+
+<div class="hero-stats">
+
+<div>
+
+<h2>13+</h2>
+
+<p>Games</p>
+
+</div>
+
+<div>
+
+<h2>100%</h2>
+
+<p>Free</p>
+
+</div>
+
+<div>
+
+<h2>🔥</h2>
+
+<p>Daily Fun</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hero-image">
+
+<img src="assets/hero/controller.webp.png" alt="Gaming Controller">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+<div class="multi-search">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search anything on the web..."
+>
+
+<button id="searchBtn">
+Search 🔍
+</button>
+
+<div class="search-engines">
+
+<a id="googleLink" target="_blank">Google</a>
+
+<a id="bingLink" target="_blank">Bing</a>
+
+<a id="duckLink" target="_blank">DuckDuckGo</a>
+
+<a id="yahooLink" target="_blank">Yahoo</a>
+
+<a id="ecosiaLink" target="_blank">Ecosia</a>
+
+</div>
+
+</div>
+
+</section>
+<section class="player-profile">
+
+<div class="profile-card">
+
+<div class="profile-avatar">
+🎮
+</div>
+
+<div class="profile-info">
+
+<h2 id="playerName">New Gamer</h2>
+
+<p>Level <span id="playerLevel">1</span></p>
+
+<div class="xp-bar">
+<div id="xpFill"></div>
+</div>
+
+<div class="profile-stats">
+
+<div>
+<h3 id="gamesPlayed">0</h3>
+<p>Games</p>
+</div>
+
+<div>
+<h3 id="playerXP">0</h3>
+<p>XP</p>
+</div>
+
+<div>
+<h3 id="playerStreak">0</h3>
+<p>Streak</p>
+</div>
+
+</div>
+
+<button id="changeNameBtn">
+✏ Change Name
+</button>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= FEATURED ================= -->
+
+<section id="featured" class="featured">
+
+<h2 class="section-title">🔥 Featured Games</h2>
+
+<div class="featured-grid">
+
+<div class="feature-card game-card"
+data-title="🎯 Aim Trainer"
+data-desc="Improve your aiming accuracy"
+data-target="aim">
+
+<div class="game-thumb">
+<img src="assets/games/aimtrainerbanner.png" alt="Aim Trainer">
+</div>
+
+<div class="card-body">
+<span class="tag">Skill</span>
+
+<h3>🎯 Aim Trainer</h3>
+
+<p>Sharpen your reflexes and accuracy.</p>
+
+<div class="rating">
+⭐⭐⭐⭐☆
+<span>2 min</span>
+</div>
+
+<button class="play-card">
+▶ Play
+</button>
+
+</div>
+
+</div>
+
+<div class="feature-card game-card"
+data-title="🧠 Memory Flash"
+data-desc="Remember emoji sequence"
+data-target="memory">
+
+<div class="game-thumb">
+<img src="assets/games/memorygamebanner.png" alt="Memory">
+</div>
+
+<div class="card-body">
+<span class="tag">Brain</span>
+
+<h3>🧠 Memory Flash</h3>
+
+<p>Train your memory with fun challenges.</p>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>3 min</span>
+</div>
+
+<button class="play-card">
+▶ Play
+</button>
+
+</div>
+
+</div>
+
+<div class="feature-card game-card"
+data-title="🚗 Guess the Car Logo"
+data-desc="Guess famous car brands"
+data-target="carlogo">
+
+<div class="game-thumb">
+<img src="assets/games/carlogobanner.png" alt="Car Logo">
+</div>
+
+<div class="card-body">
+<span class="tag">Quiz</span>
+
+<h3>🚗 Car Logo</h3>
+
+<p>Identify famous automobile brands.</p>
+
+<div class="rating">
+⭐⭐⭐⭐☆
+<span>2 min</span>
+</div>
+
+<button class="play-card">
+▶ Play
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ALL GAMES ================= -->
+
+<section id="games" class="games">
+
+<h2>🎮 All Games</h2>
+
+<div class="games-grid">
+
+<!-- Memory -->
+<div class="game-card" data-title="🧠 Memory Flash" data-desc="Remember emoji sequence" data-target="memory">
+    <div class="game-image">
+        <img src="assets/games/memorygamebanner.png" alt="Memory Flash">
+    </div>
+    <div class="game-info">
+        <h3>🧠 Memory Flash</h3>
+        <p>Remember emoji sequences and improve your memory.</p>
+    </div>
+</div>
+
+<!-- Pattern -->
+<div class="game-card" data-title="🧩 Pattern Breaker" data-desc="Guess the pattern" data-target="pattern">
+    <div class="game-image">
+        <img src="assets/games/pattern.png" alt="Pattern Breaker">
+    </div>
+    <div class="game-info">
+        <h3>🧩 Pattern Breaker</h3>
+        <p>Find the hidden pattern before time runs out.</p>
+    </div>
+</div>
+
+<!-- Spot the Fake -->
+<div class="game-card" data-title="🕵️ Spot the Fake" data-desc="Fact or Fake?" data-target="fake">
+    <div class="game-image">
+        <img src="assets/games/fake.png" alt="Spot the Fake">
+    </div>
+    <div class="game-info">
+        <h3>🕵️ Spot the Fake</h3>
+        <p>Decide whether each statement is TRUE or FAKE.</p>
+    </div>
+</div>
+
+<!-- Typing -->
+<div class="game-card" data-title="⌨️ Speed Typing" data-desc="Type fast" data-target="typing">
+    <div class="game-image">
+        <img src="assets/games/typing.png" alt="Typing Speed">
+    </div>
+    <div class="game-info">
+        <h3>⌨️ Speed Typing</h3>
+        <p>Test your typing speed and beat your best score.</p>
+    </div>
+</div>
+
+<!-- Aim Trainer -->
+<div class="game-card" data-title="🎯 Aim Trainer" data-desc="Test your aim" data-target="aim">
+    <div class="game-image">
+        <img src="assets/games/aimtrainerbanner.png" alt="Aim Trainer">
+    </div>
+    <div class="game-info">
+        <h3>🎯 Aim Trainer</h3>
+        <p>Improve your reaction speed and aiming accuracy.</p>
+    </div>
+</div>
+
+<!-- Math -->
+<div class="game-card" data-title="🧮 Quick Math Rush" data-desc="Solve fast" data-target="math">
+    <div class="game-image">
+        <img src="assets/games/math.png" alt="Math Rush">
+    </div>
+    <div class="game-info">
+        <h3>🧮 Quick Math Rush</h3>
+        <p>Solve maths quickly before the timer ends.</p>
+    </div>
+</div>
+
+<!-- Country -->
+<div class="game-card" data-title="🌍 Guess the Country" data-desc="Emoji → Country" data-target="country">
+    <div class="game-image">
+        <img src="assets/games/country.png" alt="Guess the Country">
+    </div>
+    <div class="game-info">
+        <h3>🌍 Guess the Country</h3>
+        <p>Guess countries using emojis and word clues.</p>
+    </div>
+</div>
+
+<!-- Slot -->
+<div class="game-card" data-title="🎰 Emoji Slot Machine" data-desc="Spin & Win" data-target="slot">
+    <div class="game-image">
+        <img src="assets/games/slot.png" alt="Emoji Slot">
+    </div>
+    <div class="game-info">
+        <h3>🎰 Emoji Slot Machine</h3>
+        <p>Spin the reels and match emojis to win.</p>
+    </div>
+</div>
+
+<!-- Memory Count -->
+<div class="game-card" data-title="🧠 Guess the Memory Count" data-desc="Count dots" data-target="dots">
+    <div class="game-image">
+        <img src="assets/games/dots.png" alt="Memory Count">
+    </div>
+    <div class="game-info">
+        <h3>🧠 Memory Count</h3>
+        <p>Remember how many dots appeared on the screen.</p>
+    </div>
+</div>
+
+<!-- Lie -->
+<div class="game-card" data-title="🕵️ Guess the Lie" data-desc="Find the lie" data-target="lie">
+    <div class="game-image">
+        <img src="assets/games/lie.png" alt="Guess the Lie">
+    </div>
+    <div class="game-info">
+        <h3>🕵️ Guess the Lie</h3>
+        <p>Find the one statement that isn't true.</p>
+    </div>
+</div>
+
+<!-- Roast -->
+<div class="game-card" data-title="😈 Guess the Roast" data-desc="Fill the roast" data-target="roast">
+    <div class="game-image">
+        <img src="assets/games/roast.png" alt="Guess the Roast">
+    </div>
+    <div class="game-info">
+        <h3>😈 Guess the Roast</h3>
+        <p>Complete hilarious roasts and challenge your humor.</p>
+    </div>
+</div>
+
+<!-- Study Logo -->
+<div class="game-card" data-title="📚 Guess the Study Logo" data-desc="Study platforms" data-target="studylogo">
+    <div class="game-image">
+        <img src="assets/games/studylogo.png" alt="Study Logo">
+    </div>
+    <div class="game-info">
+        <h3>📚 Study Logo</h3>
+        <p>Identify popular study platform logos.</p>
+    </div>
+</div>
+
+<!-- Car Logo -->
+<div class="game-card" data-title="🚗 Guess the Car Logo" data-desc="Car brands" data-target="carlogo">
+    <div class="game-image">
+        <img src="assets/games/carlogobanner.png" alt="Car Logo">
+    </div>
+    <div class="game-info">
+        <h3>🚗 Car Logo</h3>
+        <p>Guess famous car brands from their logos.</p>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MODAL ================= -->
+<div id="gameModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">×</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <button id="playBtn">▶ Play Now</button>
+  </div>
+</div>
+
+<!-- ================= ALL GAMES ================= -->
+<div id="allGames" style="display:none;">
+
+  <!-- MEMORY -->
+  <div class="game-section" id="memory">
+    <h2>🧠 Memory Flash</h2>
+    <p>Level: <span id="level">1</span> | Best: <span id="best">1</span></p>
+    <div id="progress"><div id="bar"></div></div>
+    <p id="memoryDisplay">Ready?</p>
+    <button id="startMemory">Start</button><br><br>
+    <input id="memoryInput" placeholder="Type emojis together">
+    <button id="checkMemory">Check</button>
+    <p id="memoryResult"></p>
+  </div>
+
+  <!-- PATTERN -->
+  <div class="game-section" id="pattern">
+    <h2>🧩 Pattern Breaker</h2>
+    <p id="patternText">Press Start</p>
+    <button id="startPattern">Start</button><br><br>
+    <input id="patternInput" placeholder="Emoji likho">
+    <button id="checkPattern">Check</button>
+    <p id="patternResult"></p>
+  </div>
+
+  <!-- FAKE -->
+  <div class="game-section" id="fake">
+    <h2>🕵️ Spot the Fake</h2>
+    <p id="factText">Loading...</p>
+    <button id="trueBtn">TRUE</button>
+    <button id="falseBtn">FAKE</button>
+    <p id="factResult"></p>
+    <button id="nextFact">Next</button>
+  </div>
+
+  <!-- TYPING -->
+  <div class="game-section" id="typing">
+    <h2>⌨️ Speed Typing</h2>
+    <p id="typingSentence">Press Start</p>
+    <button id="startTyping">Start</button><br><br>
+    <input id="typingInput" placeholder="Type here">
+    <button id="checkTyping">Check</button>
+    <p id="typingResult"></p>
+  </div>
+
+  <!-- AIM -->
+  <div class="game-section" id="aim">
+  <h2>🎯 Aim Trainer</h2>
+  <p>Time: <span id="aimTime">10</span>s | Score: <span id="aimScore">0</span></p>
+  <button id="startAim">Start</button>
+  <div id="aimArea"></div>
+  <p id="aimResult"></p>
+</div>
+
+  <!-- MATH -->
+  <div class="game-section" id="math">
+    <h2>🧮 Quick Math Rush</h2>
+    <p id="mathQ">Press Start</p>
+    <button id="startMath">Start</button><br><br>
+    <input id="mathInput" type="number">
+    <button id="checkMath">Check</button>
+    <p id="mathTimer"></p>
+    <p id="mathResult"></p>
+  </div>
+
+  <!-- COUNTRY -->
+  <div class="game-section" id="country">
+    <h2>🌍 Guess the Country</h2>
+    <p id="countryEmoji">🌍</p>
+    <input id="countryInput" placeholder="Country name">
+    <button id="checkCountry">Check</button>
+    <button id="nextCountry">Next</button>
+    <p id="countryResult"></p>
+  </div>
+
+  <!-- SLOT -->
+  <div class="game-section" id="slot">
+    <h2>🎰 Emoji Slot Machine</h2>
+    <div id="slot">
+      <span class="slotItem">❓</span>
+      <span class="slotItem">❓</span>
+      <span class="slotItem">❓</span>
+    </div>
+    <button id="spinSlot">SPIN</button>
+    <p id="slotResult"></p>
+  </div>
+
+  <!-- DOTS -->
+ <div class="game-section" id="dots">
+  <h2>🧠 Guess the Memory Count</h2>
+  <div id="dotArea"></div>
+  <button id="startDots">Start</button><br><br>
+  <input id="dotGuess" type="number">
+  <button id="checkDots">Check</button>
+  <p id="dotResult"></p>
+</div>
+
+  <!-- LIE -->
+  <div class="game-section" id="lie">
+  <h2>🕵️ Guess the Lie</h2>
+  <ul id="lieList">
+    <li class="lieItem"></li>
+    <li class="lieItem"></li>
+    <li class="lieItem"></li>
+  </ul>
+  <p id="lieResult"></p>
+  <button id="nextLie">Next</button>
+</div>
+
+  <!-- ROAST -->
+  <div class="game-section" id="roast">
+    <h2>😈 Guess the Roast</h2>
+    <p id="roastText">Press Start</p>
+    <button id="startRoast">Start</button><br><br>
+    <input id="roastInput">
+    <button id="checkRoast">Check</button>
+    <p id="roastResult"></p>
+  </div>
+
+  <!-- STUDY LOGO -->
+  <div class="game-section" id="studylogo">
+    <h2>📚 Guess the Study Logo</h2>
+    <img id="studyLogo">
+    <div>
+      <button class="studyBtn"></button>
+      <button class="studyBtn"></button>
+      <button class="studyBtn"></button>
+      <button class="studyBtn"></button>
+    </div>
+    <p id="studyResult"></p>
+    <button id="nextStudy">Next</button>
+  </div>
+
+  <!-- CAR LOGO -->
+  <div class="game-section" id="carlogo">
+    <h2>🚗 Guess the Car Logo</h2>
+    <img id="carLogo">
+    <div>
+      <button class="carBtn"></button>
+      <button class="carBtn"></button>
+      <button class="carBtn"></button>
+      <button class="carBtn"></button>
+    </div>
+    <p id="carResult"></p>
+    <button id="nextCar">Next</button>
+  </div>
+
+</div>
+
+
+<!-- ================= SCRIPTS ================= -->
+<script src="script.js"></script>
+<script src="memory.js"></script>
+<script src="pattern.js"></script>
+<script src="fake.js"></script>
+<script src="typing.js"></script>
+<script src="aim.js"></script>
+<script src="math.js"></script>
+<script src="country.js"></script>
+<script src="slot.js"></script>
+<script src="dots.js"></script>
+<script src="lie.js"></script>
+<script src="roast.js"></script>
+<script src="studylogo.js"></script>
+<script src="carlogo.js"></script>
+
+</body>
+</html>
+
+<section class="credits-section" id="credits">
+
+<h2>🎮 Credits</h2>
+
+<div class="credits-card">
+
+<p>
+<strong>Developed By</strong>
+</p>
+
+<h3>Chaitanya & Tejas</h3>
+
+<p class="credits-text">
+
+This website has been created as a <strong>personal project</strong> to combine fun, creativity, and learning into one interactive gaming platform. Every game, design, and feature has been developed with passion as part of our journey to improve web development skills and create enjoyable experiences for everyone.
+
+</p>
+
+<p class="copyright">
+
+© 2026 Chaitanya Gaming Zone. All Rights Reserved.
+
+</p>
+
+</div>
+
+</section>
+
+
+
