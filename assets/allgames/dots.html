@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Memory Dots | Chaitanya Gaming Zone</title>
+
+<link rel="stylesheet" href="../../game-style.css">
+<link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="../../index.html" class="back-btn">
+🏠 Back Home
+</a>
+
+<h2>🎮 Chaitanya Gaming Zone</h2>
+
+</header>
+
+<div class="game-container">
+
+<div class="game-banner">
+
+<img src="../games/dots.png" alt="Memory Dots">
+
+</div>
+
+<div class="game-card">
+
+<h1>🔵 Memory Dots</h1>
+
+<p>
+
+Count the dots before they disappear and enter the correct number.
+
+</p>
+
+<br>
+
+<div id="dotArea" class="dot-area"></div>
+
+<br>
+
+<input
+
+type="number"
+
+id="dotGuess"
+
+placeholder="How many dots did you see?"
+
+autocomplete="off">
+
+<br><br>
+
+<div style="display:flex;gap:15px;flex-wrap:wrap;">
+
+<button id="startDots">
+
+▶ Start Game
+
+</button>
+
+<button id="checkDots">
+
+✅ Check Answer
+
+</button>
+
+</div>
+
+<br>
+
+<p id="dotResult"></p>
+
+</div>
+
+</div>
+
+<script src="../../dots.js"></script>
+
+</body>
+
+</html>

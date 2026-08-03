@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guess the Country | Chaitanya Gaming Zone</title>
+
+<link rel="stylesheet" href="../../game-style.css">
+<link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="../../index.html" class="back-btn">
+🏠 Back Home
+</a>
+
+<h2>🎮 Chaitanya Gaming Zone</h2>
+
+</header>
+
+<div class="game-container">
+
+<div class="game-banner">
+
+<img src="../games/country.png" alt="Guess the Country">
+
+</div>
+
+<div class="game-card">
+
+<h1>🌍 Guess the Country</h1>
+
+<p>
+
+Look at the emojis and guess the correct country.
+
+</p>
+
+<br>
+
+<div id="countryEmoji" class="memory-display">
+
+🌍 ❓
+
+</div>
+
+<br>
+
+<input
+
+type="text"
+
+id="countryInput"
+
+placeholder="Enter country name..."
+
+autocomplete="off">
+
+<br><br>
+
+<div style="display:flex;gap:15px;flex-wrap:wrap;">
+
+<button id="checkCountry">
+
+✅ Check Answer
+
+</button>
+
+<button id="nextCountry">
+
+➡ Next Country
+
+</button>
+
+</div>
+
+<br>
+
+<p id="countryResult"></p>
+
+</div>
+
+</div>
+
+<script src="../../country.js"></script>
+
+</body>
+
+</html>
